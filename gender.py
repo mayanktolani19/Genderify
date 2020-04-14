@@ -33,7 +33,7 @@ result = loaded_model.score(X_test, Y_test)
 print(classification_report(Y_test, loaded_model.predict(X_test), digits=4))
 
 
-"""#Making the predictions
+#Making the predictions
 Y_pred = classifier.predict(X_test)
 data=['Shubhendu']
 vect=cv.transform(data)
@@ -41,4 +41,3 @@ p=classifier.predict(vect)
 print(p)
 
 print(classification_report(Y_test, classifier.predict(X_test), digits=4))
-"""
