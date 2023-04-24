@@ -8,8 +8,8 @@ from sklearn.metrics import classification_report
 df=pd.read_csv('NationalNames.csv')
 df.Gender.replace({'F':0,'M':1},inplace=True)
 df_data = df[["Name","Gender"]]
-X=df_data['Name']
 Y=df_data['Gender']
+X=df_data['Name']
 
 #Applying CountVectorizer
 cv = CountVectorizer()
